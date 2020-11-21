@@ -25,7 +25,7 @@ body{
     margin: 0;
     font-family: Roboto;
     font-size: clamp(1rem, 2vw, 1.1rem); 
-    background-color: #b6b6b6;/* tan*/
+    background-color: #b4b4b4;/* tan*/
 }
 
 header{
@@ -223,6 +223,6 @@ main{
 
 
 .bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover{
-    background-color: rgb(88, 74, 55);
+    background-color: rgb(143, 129, 110);
     transition: 2s;
 }
