@@ -16,10 +16,11 @@ html {
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px auto;  
+    grid-template-rows: 50px auto 200px;  
     grid-template-areas: 
         "head"
-        "main";
+        "main"
+        "foot";
     padding: 0;
     margin: 0;
     font-family: Roboto;
@@ -36,6 +37,11 @@ header{
     opacity: 0.9;
     margin-top: -1px;
     z-index: 999;
+}
+
+footer{
+    grid-area: foot;
+    background-color: black;
 }
 
 .nav-title{
@@ -62,6 +68,7 @@ main{
     align-content: center;
     align-items: center;
     padding: 1rem 0 2rem 0;
+
 }
 
 .cards{
@@ -70,19 +77,23 @@ main{
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
+    max-width: 1100px;
+    border: 1px solid black;
+    justify-content: space-evenly;
 }
 
 .artic{
-    max-width: 250px;
-    max-height: 250px;
-    min-width: 200px;
-    min-height: 200px;
+    max-width: 220px;
+    max-height: 220px;
+    min-width: 180px;
+    min-height: 180px;
     height: 25vw;
     width: 25vw;
     /* border: 1px solid black; */
-    margin: 1rem 1rem; 
+    margin: clamp(10px, 1vw, 1rem); 
     background-color: aquamarine;
     position: relative;
+    
 }
 
 .class{
@@ -149,20 +160,6 @@ main{
     color: aliceblue;
 } 
 
-
-
-.top2{
-    position: absolute;
-    background-color: rgb(82, 82, 116);
-    padding: 0;
-    margin: 0;
-    left: 0;
-    height: 50%;
-    width: 100%;
-    text-decoration: none;
-    color: aliceblue;
-} 
-
 .bottom2{
     position: absolute;
     background-color: rgb(140, 140, 187);
@@ -173,8 +170,41 @@ main{
     width: 100%;
     text-decoration: none;
     color: aliceblue;
-    
 } 
+
+.twenty{
+    position: absolute;
+    background-color: rgb(82, 82, 116);
+    padding: 0;
+    margin: 0;
+    left: 0;
+    height: 20%;
+    width: 100%;
+    text-decoration: none;
+    color: aliceblue;
+}
+.eighty{
+    position: absolute;
+    background-color: rgb(82, 82, 116);
+    padding: 0;
+    margin-top: 20%;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    text-decoration: none;
+    color: aliceblue;
+}
+.third_eighty{
+    position: absolute;
+    background-color: rgb(82, 82, 116);
+    padding: 0;
+    margin-top: 40%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    text-decoration: none;
+    color: aliceblue;
+}
 
 .center{
     position: absolute;
@@ -183,7 +213,7 @@ main{
 }
 
 
-.bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover{
+.bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover{
     background-color: bisque;
     transition: 2s;
 }
