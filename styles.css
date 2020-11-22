@@ -90,12 +90,12 @@ main{
     min-height: 170px;
     height: 25vw;
     width: 25vw;
-    margin: 6px 5px; 
+    margin: 10px 5px; 
     position: relative;
-    border-radius: 5px;
+    border-radius: 10%;
     overflow: hidden;
     background-color: rgb(153, 153, 153);
-    
+
 }
 
 .class{
