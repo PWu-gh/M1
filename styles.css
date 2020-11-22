@@ -86,11 +86,11 @@ main{
 .artic{
     max-width: 220px;
     max-height: 220px;
-    min-width: 180px;
-    min-height: 180px;
+    min-width: 170px;
+    min-height: 170px;
     height: 25vw;
     width: 25vw;
-    margin: clamp(10px, 1vw, 1rem); 
+    margin: 6px 5px; 
     position: relative;
     border-radius: 5px;
     overflow: hidden;
