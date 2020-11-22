@@ -96,6 +96,7 @@ main{
     border-radius: 10%;
     overflow: hidden;
     background-color: rgb(153, 153, 153);
+    outline: none;
 
 }
 
@@ -248,11 +249,11 @@ main{
 
 /* touchscreen */
 @media (any-hover: none) {
-    .toggler:focus .class{
+    .artic:focus .class{
         visibility: hidden;
     }
     
-    .toggler:focus .inside-class{
+    .artic:focus .inside-class{
         visibility: visible;
     }
     
