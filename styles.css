@@ -239,3 +239,16 @@ main{
     background-color: rgb(143, 129, 110);
     transition: 2s;
 }
+
+/* active */
+.artic:active .class{
+    visibility: hidden;
+}
+
+.artic:active .inside-class{
+    visibility: visible;
+}
+.bottom:active, .top:active, .left:active, .right:active, .bottom2:active, .top2:active, .eighty:active, .twenty:active{
+    background-color: rgb(143, 129, 110);
+    transition: 2s;
+}
