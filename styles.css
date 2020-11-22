@@ -42,7 +42,8 @@ header{
 footer{
     grid-area: foot;
     background-color: rgb(34, 34, 34);
-    margin-top: 5rem;
+    margin-top: 5em;
+
 }
 
 .nav-title{
@@ -54,6 +55,14 @@ footer{
     align-items: center; /* vertical*/
     height: 100%;
     color: rgb(179, 179, 179);
+    position: relative;
+}
+
+.footer-sig{
+    position: absolute;
+    border: 1px solid grey;
+    right: 10px;
+    bottom: 10px;
 }
 
 main{
@@ -283,3 +292,12 @@ main{
     border-radius: 20px;
     border: 3px solid rgb(192, 192, 192);
   }
+
+
+.im{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    opacity:0.9;
+    margin: 12px;
+}
