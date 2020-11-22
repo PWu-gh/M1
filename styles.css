@@ -104,16 +104,11 @@ main{
     transform: translate(-50%,-50%);
 
 }
-
-.artic:hover .class{
-    visibility: hidden;
-}
 .inside-class{
     visibility: hidden;
 }
-.artic:hover .inside-class{
-    visibility: visible;
-}
+
+
 
 .top{
     position: absolute;
@@ -234,21 +229,34 @@ main{
     transform: translate(-50%,-50%);
 }
 
-
-.bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover{
-    background-color: rgb(143, 129, 110);
-    transition: 2s;
+/* with mouse hover */
+@media (any-hover: hover) {
+    .artic:hover .class{
+        visibility: hidden;
+    }
+    
+    .artic:hover .inside-class{
+        visibility: visible;
+    }
+    
+    .bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover{
+        background-color: rgb(143, 129, 110);
+        transition: 1.5s;
+    }
 }
 
-/* active */
-.artic:active .class{
-    visibility: hidden;
-}
-
-.artic:active .inside-class{
-    visibility: visible;
-}
-.bottom:active, .top:active, .left:active, .right:active, .bottom2:active, .top2:active, .eighty:active, .twenty:active{
-    background-color: rgb(143, 129, 110);
-    transition: 2s;
+/* touchscreen */
+@media (any-hover: none) {
+    .toggler:focus .class{
+        visibility: hidden;
+    }
+    
+    .toggler:focus .inside-class{
+        visibility: visible;
+    }
+    
+    .bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover{
+        background-color: rgb(143, 129, 110);
+        transition: 1.5s;
+    }
 }
