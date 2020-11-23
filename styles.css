@@ -16,7 +16,7 @@ html {
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px auto 200px;  
+    grid-template-rows: 50px auto 150px;  
     grid-template-areas: 
         "head"
         "main"
@@ -42,7 +42,7 @@ header{
 footer{
     grid-area: foot;
     background-color: rgb(34, 34, 34);
-    margin-top: 5em;
+    margin-top: 2em;
 
 }
 
