@@ -148,7 +148,7 @@ main{
 
 .left{
     position: absolute;
-    background-color: rgb(111, 111, 158);
+    /* background-color: rgb(111, 111, 158); */
     padding: 0;
     left: 0;
     height: 100%;
@@ -160,7 +160,7 @@ main{
 
 .right{
     position: absolute;
-    background-color: rgb(111, 111, 158);
+    /* background-color: rgb(111, 111, 158); */
     padding: 0;
     margin-left: 50%;
     left: 0;
@@ -300,4 +300,11 @@ main{
     border-radius: 10%;
     opacity:0.9;
     margin: 12px;
+}
+
+.origin-color{
+    background-color: rgb(111, 111, 158);
+}
+.alt-color{
+    background-color: rgb(81, 81, 128);
 }
