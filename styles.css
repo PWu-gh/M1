@@ -109,6 +109,10 @@ main{
 
 }
 
+.origin-color{
+    background-color: rgb(111, 111, 158)
+}
+
 .class{
     position: absolute;
     top: 50%; left: 50%;
@@ -148,19 +152,18 @@ main{
 
 .left{
     position: absolute;
-    /* background-color: rgb(111, 111, 158); */
+    background-color: rgb(111, 111, 158);
     padding: 0;
     left: 0;
     height: 100%;
     width: 50%;
     text-decoration: none;
     color: rgb(230, 231, 233);
-    
 } 
 
 .right{
     position: absolute;
-    /* background-color: rgb(111, 111, 158); */
+    background-color: rgb(111, 111, 158);
     padding: 0;
     margin-left: 50%;
     left: 0;
@@ -240,6 +243,7 @@ main{
     transform: translate(-50%,-50%);
 }
 
+
 /* with mouse hover */
 @media (any-hover: hover) {
     .artic:hover .class{
@@ -253,6 +257,7 @@ main{
     .bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover{
         background-color: rgb(143, 129, 110);
         transition: 1.5s;
+
     }
 }
 
@@ -269,6 +274,7 @@ main{
     .bottom:hover, .top:hover, .left:hover, .right:hover, .bottom2:hover, .top2:hover, .eighty:hover, .twenty:hover{
         background-color: rgb(143, 129, 110);
         transition: 1.5s;
+        
     }
 }
 
@@ -302,9 +308,7 @@ main{
     margin: 12px;
 }
 
-.origin-color{
-    background-color: rgb(111, 111, 158)
-}
+
 .alt-color{
     background-color: rgb(81, 81, 128);
 }
