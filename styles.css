@@ -106,7 +106,6 @@ main{
     overflow: hidden;
     background-color: rgb(153, 153, 153);
     outline: none;
-
 }
 
 .origin-color{
@@ -311,4 +310,63 @@ main{
 
 .alt-color{
     background-color: rgb(81, 81, 128);
+}
+
+
+/*  for the king */
+
+.artick{
+    max-width: 220px;
+    max-height: 220px;
+    min-width: 170px;
+    min-height: 170px;
+    height: 25vw;
+    width: 25vw;
+    margin: 10px 5px; 
+    position: relative;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: rgb(153, 153, 153);
+    outline: none;
+}
+
+.artick:hover{
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 250px;
+    min-height: 250px;
+    height: 50vw;
+    width: 50vw;
+    transition: 1s;
+}
+
+
+.full{
+    position: absolute;
+    background-color: rgb(111, 111, 158);
+    padding: 0;
+    margin: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(230, 231, 233);
+} 
+
+/* with mouse hover */
+@media (any-hover: hover) {
+    
+    .artick:hover .inside-class{
+        visibility: visible;
+    }
+    
+}
+
+/* touchscreen */
+@media (any-hover: none) {
+    
+    .artick:focus .inside-class{
+        visibility: visible;
+    }
+    
 }
